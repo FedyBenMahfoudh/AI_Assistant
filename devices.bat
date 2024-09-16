@@ -14,13 +14,13 @@ adb connect %ip%
 @echo off
 
 rem Set the IP address of your Android device
-set DEVICE_IP=192.168.1.7
+set DEVICE_IP=192.168.1.12
 
 rem Set the port number for ADB
 set ADB_PORT=5555
 
 rem Set the path to the ADB executable
-set ADB_PATH="C:\platform-tools\adb.exe"
+set ADB_PATH="C:\Users\MOUNIR\Downloads\platform-tools-latest-windows\platform-tools\adb.exe"
 
 rem Restart the ADB server
 %ADB_PATH% kill-server

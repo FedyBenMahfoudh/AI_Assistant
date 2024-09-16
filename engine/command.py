@@ -1,4 +1,4 @@
-import pyttsx3
+import pyttsx3 #pick the voice 
 import speech_recognition as sr
 import eel
 import time
@@ -70,13 +70,13 @@ def allCommands(message=1):
             contact_no, name = findContact(query)
             if(contact_no != 0):
                 speak("Which mode you want to use whatsapp or mobile")
-                preferance = takecommand()
+                preferance = takeCommand()
                 print(preferance)
 
                 if "mobile" in preferance:
                     if "send message" in query or "send sms" in query: 
                         speak("what message to send")
-                        message = takecommand()
+                        message = takeCommand()
                         sendMessage(message, contact_no, name)
                     elif "phone call" in query:
                         makeCall(name, contact_no)
@@ -87,7 +87,7 @@ def allCommands(message=1):
                     if "send message" in query:
                         message = 'message'
                         speak("what message to send")
-                        query = takecommand()
+                        query = takeCommand()
                                         
                     elif "phone call" in query:
                         message = 'call'
@@ -102,8 +102,9 @@ def allCommands(message=1):
 
         
 
-  except :
-    print("error")
+  except Exception as error:
+    # handle the exception
+    print("An Error occurred:", error)
 
   eel.ShowHood()
 

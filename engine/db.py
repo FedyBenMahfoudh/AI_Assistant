@@ -8,9 +8,9 @@ cursor = conn.cursor()
 query = "CREATE TABLE IF NOT EXISTS sys_command(id integer primary key, name VARCHAR(100), path VARCHAR(1000))"
 cursor.execute(query)
 
-""" query = "INSERT INTO sys_command VALUES (null,'brave', 'C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave')"
-cursor.execute(query)
-conn.commit() """
+# query = "INSERT INTO sys_command VALUES (null,'brave', 'C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave')"
+# cursor.execute(query)
+# conn.commit()
 
 query = "CREATE TABLE IF NOT EXISTS web_command(id integer primary key, name VARCHAR(100), url VARCHAR(1000))"
 cursor.execute(query)
@@ -34,16 +34,16 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS contacts (id integer primary key, n
 #         selected_data = [row[i] for i in desired_columns_indices]
 #         cursor.execute(''' INSERT INTO contacts (id, 'name', 'mobile_no') VALUES (null, ?, ?);''', tuple(selected_data))
 
-# # Commit changes and close connection
+# # # Commit changes and close connection
 # conn.commit()
 # conn.close()
 
 
-# query = "INSERT INTO contacts VALUES (null,'Aya Hosni', '+21629661996',null)"
-# cursor.execute(query)
-# conn.commit()
+query = "INSERT INTO contacts VALUES (null,'jawher', '+21693508293',null)"
+cursor.execute(query)
+conn.commit()
 
-# query = "DELETE FROM contacts where id=1"
+# query = "DELETE FROM sys_command where id=2"
 # cursor.execute(query)
 # conn.commit()
 

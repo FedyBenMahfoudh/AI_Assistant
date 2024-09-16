@@ -39,24 +39,10 @@ deactivate nondestructive
 if [ "${OSTYPE:-}" = "cygwin" ] || [ "${OSTYPE:-}" = "msys" ] ; then
     # transform D:\path\to\venv to /d/path/to/venv on MSYS
     # and to /cygdrive/d/path/to/venv on Cygwin
-<<<<<<< HEAD:envalpha/Scripts/activate
-    export VIRTUAL_ENV=$(cygpath "C:\Users\21693\OneDrive\Desktop\jarvis-main\envjarvis")
+    export VIRTUAL_ENV=$(cygpath "C:\Users\MOUNIR\Desktop\WebDev\CPU-alpha\envalpha")
 else
     # use the path as-is
-    export VIRTUAL_ENV="C:\Users\21693\OneDrive\Desktop\jarvis-main\envjarvis"
-=======
-<<<<<<< HEAD
-    export VIRTUAL_ENV=$(cygpath "C:\Users\MOUNIR\Desktop\WebDev\Jarvis\envjarvis")
-else
-    # use the path as-is
-    export VIRTUAL_ENV="C:\Users\MOUNIR\Desktop\WebDev\Jarvis\envjarvis"
-=======
-    export VIRTUAL_ENV=$(cygpath "C:\jarvis\envjarvis")
-else
-    # use the path as-is
-    export VIRTUAL_ENV="C:\jarvis\envjarvis"
->>>>>>> 2631f5274412d3d2bba252a17a7e07e588b3c3b9
->>>>>>> d039eeee4c799bbf84e4ca3224b40b08c5c68c0a:envjarvis/Scripts/activate
+    export VIRTUAL_ENV="C:\Users\MOUNIR\Desktop\WebDev\CPU-alpha\envalpha"
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -73,9 +59,9 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
-    PS1="(envjarvis) ${PS1:-}"
+    PS1="(envalpha) ${PS1:-}"
     export PS1
-    VIRTUAL_ENV_PROMPT="(envjarvis) "
+    VIRTUAL_ENV_PROMPT="(envalpha) "
     export VIRTUAL_ENV_PROMPT
 fi
 
